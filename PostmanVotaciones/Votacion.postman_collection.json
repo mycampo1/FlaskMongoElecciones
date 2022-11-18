@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "309527d5-aa95-41a7-bd62-331b4ce9ab8f",
+		"name": "Votacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22955822"
+	},
+	"item": [
+		{
+			"name": "CrearVotacion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"usuario13\",\r\n    \"candidate\":{\r\n        \"id\":\"6376a4b7ead1d9b1fd20c655\"\r\n    },\r\n    \"station\":{\r\n        \"id\":\"6376a623ead1d9b1fd20c658\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/votes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"votes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerVotacion",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"Alejandra Lopez\",\r\n    \"candidate\":{\r\n        \"id\":\"6376754cf2454ce6ddce3b79\"\r\n    },\r\n    \"station\":{\r\n        \"id\":\"637674edf2454ce6ddce3b78\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/votes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"votes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarVoto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"usuario13\",\r\n    \"candidate\":{\r\n        \"id\":\"6376a4b7ead1d9b1fd20c655\"\r\n    },\r\n    \"station\":{\r\n        \"id\":\"6376a623ead1d9b1fd20c658\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/votes/6376aae58b05654dfe1cc0ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"votes",
+						"6376aae58b05654dfe1cc0ab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarVoto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/votes/6376ae4366bfb67da0dfd752",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"votes",
+						"6376ae4366bfb67da0dfd752"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

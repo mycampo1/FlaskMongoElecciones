@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "669cbb60-5431-4c0d-a644-5efde728dab7",
+		"name": "Candidato",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22955822"
+	},
+	"item": [
+		{
+			"name": "CrearCandidato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Andres Valencia\",\r\n    \"identification\":1115,\r\n    \"party\": {\r\n        \"id\": \"6376a276ead1d9b1fd20c650\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarCadidato",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/candidates/6376a4d6ead1d9b1fd20c656",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"candidates",
+						"6376a4d6ead1d9b1fd20c656"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerCandidato",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/candidates/6376a4b7ead1d9b1fd20c655",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"candidates",
+						"6376a4b7ead1d9b1fd20c655"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarCandidato",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Andres Laso\",\r\n    \"identification\":1115,\r\n    \"party\": {\r\n        \"id\": \"6376a276ead1d9b1fd20c650\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/candidates/6376a566ead1d9b1fd20c657",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"candidates",
+						"6376a566ead1d9b1fd20c657"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

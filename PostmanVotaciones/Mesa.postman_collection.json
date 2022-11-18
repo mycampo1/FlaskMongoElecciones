@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "7e9b6f0b-e1a4-4a4b-a2ee-9f4da21e4a61",
+		"name": "Mesa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22955822"
+	},
+	"item": [
+		{
+			"name": "CrearMesa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mesa de votacion 3\",\r\n    \"number\":3,\r\n    \"location\":\"Colegio la normal\",\r\n    \"users\":[\"usuario31\",\"usuario32\",\"usuario33\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/stations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarMesa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mesa de votacion 3\",\r\n    \"number\":3,\r\n    \"location\":\"Colegio la normal\",\r\n    \"users\":[\"usuario31\",\"usuario32\",\"usuario33\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/stations/6376a66dead1d9b1fd20c65a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stations",
+						"6376a66dead1d9b1fd20c65a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarMesa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/stations/6376a66dead1d9b1fd20c65a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stations",
+						"6376a66dead1d9b1fd20c65a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerMesa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/stations/6376a623ead1d9b1fd20c658",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stations",
+						"6376a623ead1d9b1fd20c658"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
