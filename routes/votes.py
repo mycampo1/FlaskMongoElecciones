@@ -56,4 +56,3 @@ def delete_vote(vote_id):
         return jsonify({
             "error": "No existe registro de voto"
         }), 404
-

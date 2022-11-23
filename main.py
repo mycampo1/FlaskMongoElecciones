@@ -12,6 +12,7 @@ def ping():
         "message": "Server running..."
     })
 
+
 app.register_blueprint(stations_bp, url_prefix="/stations")
 app.register_blueprint(parties_bp, url_prefix="/parties")
 app.register_blueprint(candidates_bp, url_prefix="/candidates")
