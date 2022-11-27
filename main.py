@@ -1,10 +1,13 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
+
 from routes.stations import stations_bp
 from routes.parties import parties_bp
 from routes.candidates import candidates_bp
 from routes.votes import votes_bp
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/", methods=["GET"])
 def ping():
